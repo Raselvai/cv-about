@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Rubik', sans-serif;
+	box-sizing: border-box;
+}
+
+button:focus, input:focus, textarea:focus {
+	outline: 0;
+}
+
+h2, h3, h4 {
+	font-family: 'Poppins', sans-serif;
+}
+
+.about_wrapper {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+}
+
+.about_container {
+	max-width: 1160px;
+	padding: 40px;
+	border-radius: 10px;
+	margin: 0 auto;
+	background: linear-gradient(180deg, #0C1C74 -13.92%, #3249C6 37.03%), #1D34AA;
+	display: flex;
+	align-items: center;
+	box-shadow: 1px 4px 30px rgb(0 0 0 / 82%);
+}
+
+.about_container img {
+	width: 410px;
+	border-radius: 5px;
+	margin-right: 40px;
+}
+
+.about_text {
+    max-width: 535px;
+}
+
+.about_text h2 {
+	font-size: 24px;
+	padding-bottom: 20px;
+	font-weight: 700;
+	color: #ffffff;
+}
+
+.about_text p {
+	color: #ffffff;
+	border-bottom: 1px solid #ffffff;
+	padding-bottom: 15px;
+	font-size: 15px;
+	line-height: 26px;
+}
+
+.about_text ul {
+	list-style: none;
+	margin-top: 10px;
+}
+
+.about_text ul li {
+	color: #ffffff;
+	font-size: 15px;
+	line-height: 26px;
+	width: 50%;
+	float: left;
+	margin: 5px 0;
+}
+
+.about_text ul li i {
+	margin-right: 5px;
+}
+
+.about_btn {
+	background: #ffdc60;
+	height: 62px;
+	padding: 0 52px;
+	font-size: 18px;
+	font-weight: 500;
+	display: inline-flex;
+	align-items: center;
+	border-radius: 30px;
+	color: #000000;
+	text-decoration: none;
+	transition: .3s;
+	margin-top: 25px;
+	border: 1px solid transparent;
+}
+
+.about_btn:hover {
+	background: transparent;
+	border: 1px solid #ffdc60;
+	color: #ffdc60;
+}
+
+
+@media (max-width: 1199px) { 
+	.about_container {
+	    max-width: 935px;
+	}
+}
+
+@media (max-width: 991px) { 
+	.about_wrapper {
+		height: auto;
+		padding: 60px 20px;
+	}
+
+	.about_container {
+	    max-width: 100%;
+	    flex-direction: column;
+	    align-items: flex-start;
+	}
+
+	.about_container img {
+	    width: 360px;
+	    margin-right: 0;
+	}
+
+	.about_text {
+		margin-top: 30px;
+	}
+}
+
+@media (max-width: 576px) { 
+	
+	.about_container img {
+		max-width: 100%;
+	}
+
+	.about_text ul li {
+		width: 100%;
+	}
+
+}
